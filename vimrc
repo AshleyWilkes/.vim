@@ -94,6 +94,11 @@ set splitright
 "make splitting easier {{{
 nmap <leader>vv <C-W>v-
 nmap <leader>ss <C-W>s-
+nmap <leader>tt :tabe %<CR>-
+"}}}
+
+"make folding a function easier {{{
+nmap <leader>ff /{<CR>V%zf
 "}}}
 
 "Sessions handling {{{
