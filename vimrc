@@ -97,8 +97,12 @@ nmap <leader>ss <C-W>s-
 nmap <leader>tt :tabe %<CR>-
 "}}}
 
+"make closing tabs easier with <leader>tc {{{
+nmap <leader>tc :tabc<CR>
+"}}}
+
 "make folding a function easier {{{
-nmap <leader>ff /{<CR>V%zf
+nmap <leader>ff /{<CR>V%zf:nohlsearch<CR>
 "}}}
 
 "Sessions handling {{{
@@ -165,6 +169,11 @@ autocmd User fugitive if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
 
 "ConqueGdb {{{
 let g:ConqueGdb_SrcSplit = 'left'
+"}}}
+
+"git status and git commit {{{
+nmap <leader>gs :Gstatus<CR><C-w>H
+nmap <leader>gc :Gcommit<CR>
 "}}}
 
 "typescript {{{
